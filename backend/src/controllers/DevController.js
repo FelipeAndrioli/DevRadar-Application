@@ -21,7 +21,7 @@ destroy => Deleta um único registro
 module.exports = {
 
     async index (request, response) {
-        const devs = await Dev.find
+        const devs = await Dev.find()
 
         return response.json(devs)
     },
